@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.head-title {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+  color: #190f31d8;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.text-title {
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 10px;
+  color: #190f319f;
+}
+.author-title {
+  text-align: center;
+  color: #f54e46;
+  margin-top: -15px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.search-field {
+  margin-left: 450px;
+}
+.search-item {
+  width: 370px;
+  height: 50px;
+  border: 3px solid #f54e46;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  padding-left: 10px;
+  letter-spacing: 2px;
+  color: #f54e46;
+  font-weight: 500;
+}
+.search-btn {
+  font-size: 23px;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background: #f54e46;
+  border: none;
+  margin-left: -5px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 15px;
+  color: #fff;
+}
