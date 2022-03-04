@@ -1,7 +1,10 @@
+// Search Meals Items 
 const allMeals = () => {
   const searchText = document.getElementById("search-box");
   const searchValue = searchText.value;
   const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchValue}`;
+
+  // Error Handle 
   if (searchValue == "") {
     document.getElementById("error").innerText =
       "❌ No Result Found Please Try Again";
@@ -10,16 +13,21 @@ const allMeals = () => {
       .then((res) => res.json())
       .then((data) => displaySearchResult(data.meals))
       .catch((error) => displayError(error));
+
+      // Clear Display Search Items 
     document.getElementById("search-box").value = "";
     document.getElementById("search-result").innerHTML = "";
   }
 };
+// Error Handle 
 const displayError = (error) => {
   document.getElementById("error").innerText = "❌ No Result Found Please Try Again";
 };
 
+// Dispaly Prorperty Set 
 const displaySearchResult = (data) => {
   document.getElementById("error").innerText = ''
+  // first 20 Data show Display 
   const first20items = data.slice(0, 21);
   for (const meal of first20items) {
     const searchResult = document.getElementById("search-result");
@@ -37,6 +45,7 @@ const displaySearchResult = (data) => {
   }
 };
 
+// Meals Details Itmes set 
 const loadMealDetail = (mealId) => {
   const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`;
   fetch(url)
@@ -44,6 +53,7 @@ const loadMealDetail = (mealId) => {
     .then((data) => showDisplayDetails(data.meals[0]));
 };
 
+// Show Details Items 
 const showDisplayDetails = (meal) => {
   const displayInput = document.getElementById("meal-details");
   displayInput.innerHTML = "";
