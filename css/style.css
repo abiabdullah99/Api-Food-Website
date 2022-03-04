@@ -54,4 +54,75 @@ body {
   padding-left: 10px;
   padding-right: 15px;
   color: #fff;
+  transition: .4s linear;
+}
+.search-btn:hover{
+  background: orange;
+}
+
+.details-btn {
+  font-size: 18px;
+  padding: 5px 40px;
+  border-radius: 30px;
+  background-color: #f54e46;
+  color: #ffff;
+  letter-spacing: 1px;
+  border: 2px solid #f54e46;
+  transition: 0.5s linear;
+  text-decoration: none;
+}
+.details-btn:hover {
+  background-color: transparent;
+  color: #f54e46;
+}
+.card {
+  box-shadow: 3px 3px 3px rgba(83, 83, 83, 0.034),
+    3px 3px 3px rgba(83, 83, 83, 0.034), 3px -3px 15px rgba(0, 0, 0, 0.2),
+    -3px -3px 15px rgba(0, 0, 0, 0.2);
+  width: 97%;
+  border-radius: 10px;
+}
+.card-img {
+  width: 70%;
+  margin: 0 auto;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.card-title {
+  font-size: 20px;
+  color: #190f31b9;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.card-text {
+  font-size: 18px;
+  color: #f54e46;
+  letter-spacing: 1px;
+}
+/*------------------
+    details style 
+-------------------- */
+.extraDesign{
+  width: 45%;
+  margin-top: 100px;
+}
+
+/*-------------------------
+    Error Message style 
+-------------------------- */
+.error-messege{
+  font-size: 45px;
+  color: red;
+  text-align: center;
+}
+@media only screen and (max-width:688px) {
+  .search-field {
+    margin-left: 0;
+  }
+  .search-item {
+    width: 80%;
+  }
+  .extraDesign{
+    width: 70%;
+  }
 }

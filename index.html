@@ -22,7 +22,7 @@
   </head>
   <body>
     <header class="container">
-      <h1 class="head-title">Find Your Favourite Meals</h1>
+      <h1 class="head-title"><i class="fa-solid fa-brain"></i> Find Your Favourite Meals</h1>
       <p class="text-title">
         Real food doesn't have ingredients, real food is ingredients.
       </p>
@@ -30,21 +30,26 @@
 
       <div class="search-field">
         <input
-        type="search"
-        name="search"
-        id="search-box"
-        placeholder="Enter an Ingredients"
-        class="search-item"
-      />
-      <button onclick="allMeals()" class="search-btn">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
+          type="search"
+          name="search"
+          id="search-box"
+          placeholder="Enter an Ingredients"
+          class="search-item"
+        />
+        <button onclick="allMeals()" class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
       </div>
     </header>
 
-    <div class="container mx-auto my-5 row row-cols-1 row-cols-md-3 g-4" id="search-result">
-
-      </div>
+    <div id="meal-details" class="mx-auto extraDesign">
+    </div>
+    <h1 id="error" class="error-messege"></h1>
+    <div
+      class="container mx-auto my-5 row row-cols-1 row-cols-md-3 g-5"
+      id="search-result"
+    >
+    </div>
     <script src="js/app.js"></script>
   </body>
 </html>
